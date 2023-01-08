@@ -11,6 +11,6 @@ export class ApiService {
   constructor(private httpClient: HttpClient) { }
 
   public getNews(){
-    return this.httpClient.get<any>('https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=901f9dc242254cd998d50bd8e9603fc6');
+    return this.httpClient.get<any>('https://newsapi.org/v2/everything?domains=wsj.com&apiKey=901f9dc242254cd998d50bd8e9603fc6');
   }
 }
